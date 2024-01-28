@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Sign In</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br>
+        <button onclick="signIn()">Sign In</button>
+    </div>
+
+    <div id="message-container" style="display: none;">
+        <h2>Message</h2>
+        <div id="message-content"></div>
+        <h3>Reply</h3>
+        <textarea id="reply-content" rows="4" cols="50"></textarea>
+        <button onclick="sendReply()">Send Reply</button>
+    </div><body>
+    <div id="message-container">
+        <h2>Message</h2>
+        <div id="message-content"></div>
+        <h3>Reply</h3>
+        <textarea id="reply-content" rows="4" cols="50"></textarea>
+        <button onclick="sendReply()">Send Reply</button>
+    </div>
+
+
+
+    <script src="index.js" defer></script>
+
+</body>
+</html>
